@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Програмирование\\c#\\Lern sharp\\Lern sharp\\Lern sharp.csproj": {}
+    "C:\\Lern sharp\\Lern sharp\\Lern sharp.csproj": {}
   },
   "projects": {
-    "D:\\Програмирование\\c#\\Lern sharp\\Lern sharp\\Lern sharp.csproj": {
+    "C:\\Lern sharp\\Lern sharp\\Lern sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Програмирование\\c#\\Lern sharp\\Lern sharp\\Lern sharp.csproj",
+        "projectUniqueName": "C:\\Lern sharp\\Lern sharp\\Lern sharp.csproj",
         "projectName": "Lern sharp",
-        "projectPath": "D:\\Програмирование\\c#\\Lern sharp\\Lern sharp\\Lern sharp.csproj",
+        "projectPath": "C:\\Lern sharp\\Lern sharp\\Lern sharp.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Програмирование\\c#\\Lern sharp\\Lern sharp\\obj\\",
+        "outputPath": "C:\\Lern sharp\\Lern sharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
