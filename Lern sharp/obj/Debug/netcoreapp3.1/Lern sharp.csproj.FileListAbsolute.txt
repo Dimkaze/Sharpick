@@ -24,3 +24,16 @@ F:\Програмирование\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3
 F:\Програмирование\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.dll
 F:\Програмирование\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.pdb
 F:\Програмирование\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.genruntimeconfig.cache
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.exe
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.deps.json
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.runtimeconfig.json
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.runtimeconfig.dev.json
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.dll
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\bin\Debug\netcoreapp3.1\Lern sharp.pdb
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.csprojAssemblyReference.cache
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.AssemblyInfoInputs.cache
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.AssemblyInfo.cs
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.csproj.CoreCompileInputs.cache
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.dll
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.pdb
+C:\курсачи и лабы\Programirovanie\c#\Lern sharp\Lern sharp\obj\Debug\netcoreapp3.1\Lern sharp.genruntimeconfig.cache

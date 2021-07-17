@@ -10,6 +10,7 @@ namespace Lern_sharp
 
         public int[] convertStrToArr(string patern)
         {
+
             string copy = patern;
             var poplka = new Regex(@"\D").Replace(patern, " ").Replace("  ", " ");
             int zeroCount = 0;
@@ -85,10 +86,7 @@ namespace Lern_sharp
         //    }
         //    return null;
         //}
-        public static int Grow(int[] x)
-        {
-            return x.Aggregate((a, b) => a * b);
-        }
+       
         //public static int Maps(int[] x)
         public static int[] Maps(int[] x)
         {
@@ -264,9 +262,60 @@ namespace Lern_sharp
             return zxc;
         }
 
-
+        public static string MouthSize(string animal) => animal.ToLower() == "alligator" ? "small" : "wide";
+        public static string Solution(int n)
+        {
+            String str = "";
+            //while (n >= 0)
+            //{
+                if (n >= 1000) { n -= 1000; str += "M"; }
+                else
+                {
+                    if (n >= 500) { n -= 500; str += "D"; }
+                    else
+                    {
+                        if (n >= 100) { n -= 100; str += "C"; }
+                        else
+                        {
+                            if (n >= 50) { n -= 50; str += "L"; }
+                            else
+                            {
+                                if (n >= 10) { n -= 10; str += "X"; }
+                                else
+                                {
+                                    if (n >= 5) { n -= 5; str += "V"; }
+                                    else
+                                    {
+                                        if (n >= 1) { n -= 1; str += "I"; }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+           // }
+            return str;
+        }
+        public static string Greet(string name)
+        {
+            return $"Hello, {name} how are you doing today?";
+        }
+        //public static string Likes(string[] name)
+        //{
+        //    int a = name.Length();
+        //    switch ()
+        //    {
+        //        case 0: return "no one likes this";
+        //        case 1: return name[0] + " likes this";
+        //        case 2: return name[0] + " and " + name[1] + " like this";
+        //        case 3: return name[0] + ", " + name[1] + " and " + name[2] + " like this";
+        //        default: return name[0] + ", " + name[1] + " and " + (name.Length() - 2).ToString() + " others like this";
+        //    }
+        //}
         static void Main(string[] args)
         {
+            Console.WriteLine(Greet("zxc"));
+            //Console.WriteLine(Solution(2014));
             //Console.WriteLine(AbbrevName("S Kdf"));
             //Console.WriteLine(UefaEuro2016(new [] { "Germany", "Ukraine"}, new [] { 2, 0 }));
             //Console.WriteLine(DescendingOrder(12345)); 
@@ -276,209 +325,209 @@ namespace Lern_sharp
             //ctr rr
             //string koka = "111111234211111234";
 
-            var qdr = "55x5 (1,45)(4,43)(58,q)zxc";
-            var poplka = new Regex(@"\D").Replace(qdr, " ").Replace("  ", " ");
-            int[] uno = new int[poplka.Length];
-            int[] copyuno = new int[poplka.Length];
-            //for (int i = 0,jjj = 0; i < poplka.Length; i++)
-            //{
+           // var qdr = "55x5 (1,45)(4,43)(58,q)zxc";
+           // var poplka = new Regex(@"\D").Replace(qdr, " ").Replace("  ", " ");
+           // int[] uno = new int[poplka.Length];
+           // int[] copyuno = new int[poplka.Length];
+           // //for (int i = 0,jjj = 0; i < poplka.Length; i++)
+           // //{
                 
-            //    if(poplka[i] != ' ')
-            //    {
-            //        uno[jjj] = poplka[i] - '0';
-            //        jjj++;
-            //    }
-            //    //Console.WriteLine(poplka[i]);
-            //}
-            Console.WriteLine();
-            for (int i = 0, jjj = 0; i < poplka.Length; i++)
-            {
-                int count = 0;
-                while(poplka[i] != ' ')
-                {
-                    copyuno[jjj] += (poplka[i] - '0' )* (int)Math.Pow(10,count);
-                    i++;
-                    count++;
-                }
-                jjj++;
+           // //    if(poplka[i] != ' ')
+           // //    {
+           // //        uno[jjj] = poplka[i] - '0';
+           // //        jjj++;
+           // //    }
+           // //    //Console.WriteLine(poplka[i]);
+           // //}
+           // Console.WriteLine();
+           // for (int i = 0, jjj = 0; i < poplka.Length; i++)
+           // {
+           //     int count = 0;
+           //     while(poplka[i] != ' ')
+           //     {
+           //         copyuno[jjj] += (poplka[i] - '0' )* (int)Math.Pow(10,count);
+           //         i++;
+           //         count++;
+           //     }
+           //     jjj++;
 
-            }
-            foreach (var item in copyuno)
-            {
-              // Console.WriteLine(item);
-            }
-            //Console.WriteLine(int.Parse(lkl));
-            //int[] lpl = new int[lkl.Length];
-            //for (int i = 0, loop = 0; i < lkl.Length; i++)
-            //{
-            //    try
-            //    {
+           // }
+           // foreach (var item in copyuno)
+           // {
+           //   // Console.WriteLine(item);
+           // }
+           // //Console.WriteLine(int.Parse(lkl));
+           // //int[] lpl = new int[lkl.Length];
+           // //for (int i = 0, loop = 0; i < lkl.Length; i++)
+           // //{
+           // //    try
+           // //    {
 
-            //    }
-            //    catch
-            //    {
-            //        Console.WriteLine("Несработало");
-            //    }
+           // //    }
+           // //    catch
+           // //    {
+           // //        Console.WriteLine("Несработало");
+           // //    }
 
-            //}
-            //foreach (var item in lpl)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine(new Regex(@"\d{1}x\d{1} [\(+\d{1},\d{1}\)]{2,}").Replace(qdr, "0"));
-            //Console.WriteLine(repeatStr(6,koka));
+           // //}
+           // //foreach (var item in lpl)
+           // //{
+           // //    Console.WriteLine(item);
+           // //}
+           // //Console.WriteLine(new Regex(@"\d{1}x\d{1} [\(+\d{1},\d{1}\)]{2,}").Replace(qdr, "0"));
+           // //Console.WriteLine(repeatStr(6,koka));
 
-            string kok = "the_stealth_warrior";
-            char first = kok[0];
-           // Console.WriteLine(first);
-            kok = kok.Replace("_", "-");
-            var regexx = new Regex(@"\W").Replace(kok, " ");
-            regexx = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(regexx).Replace(" ", "").Replace(regexx[0], first);
-            //Console.WriteLine(regexx);
-            //var str = "ивнов ывам ивановИц";
-            //var result = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
-            //Console.WriteLine(kok);
+           // string kok = "the_stealth_warrior";
+           // char first = kok[0];
+           //// Console.WriteLine(first);
+           // kok = kok.Replace("_", "-");
+           // var regexx = new Regex(@"\W").Replace(kok, " ");
+           // regexx = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(regexx).Replace(" ", "").Replace(regexx[0], first);
+           // //Console.WriteLine(regexx);
+           // //var str = "ивнов ывам ивановИц";
+           // //var result = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
+           // //Console.WriteLine(kok);
 
-            //foreach (string i in regexx)
-             //   Console.WriteLine(i);
+           // //foreach (string i in regexx)
+           //  //   Console.WriteLine(i);
             
-            //Console.WriteLine(regexx);
-            // string popka = "aaacccbbbab";
-            //Console.WriteLine(Switcheroo(popka));
-            int[] qerrr = new int[] { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 };
-            //Console.WriteLine(loverc(qerrr));
-            //Console.WriteLine();
-            //Console.WriteLine(MoveZeroes(qerrr));
-            //Console.WriteLine(Persistenceee(999)); 
-            //Console.WriteLine(Persistence(12345));
-            //Console.WriteLine(getCountsOfDigits(1234567));
-            //Console.WriteLine(Persistences(123,0)); 
-            int a = 3;
-            int b = (int)Math.Pow(a, 2);
+           // //Console.WriteLine(regexx);
+           // // string popka = "aaacccbbbab";
+           // //Console.WriteLine(Switcheroo(popka));
+           // int[] qerrr = new int[] { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 };
+           // //Console.WriteLine(loverc(qerrr));
+           // //Console.WriteLine();
+           // //Console.WriteLine(MoveZeroes(qerrr));
+           // //Console.WriteLine(Persistenceee(999)); 
+           // //Console.WriteLine(Persistence(12345));
+           // //Console.WriteLine(getCountsOfDigits(1234567));
+           // //Console.WriteLine(Persistences(123,0)); 
+           // int a = 3;
+           // int b = (int)Math.Pow(a, 2);
             
-            string ghj = "cacoiToBomjGuliatPoUlitse";
+           // string ghj = "cacoiToBomjGuliatPoUlitse";
             
-            var reegularka = new Regex(@"^\d*\D+\d+$");
-            //Console.WriteLine(reegularka.IsMatch("asd123"));
-            //Console.WriteLine(Regex.Replace("test123aaa4x56bbb789ccc", // строка
-              //                                   @"\d+", // шаблончик ркгулярочки
-               //                                  " ")); // символ для заммены
-            //Console.WriteLine(Regex.Replace("12/34/5678",
-            //                                 @"(?<день>\d{1,2})\/(?<месяц>\d{1,2})\/(?<год>\d{2,4})",
-            //                                 "${день}-${месяц}-${год}"));
-            //Console.WriteLine(Regex.Replace("123456",
-            //                                @"\d",
-            //                                x => (int.Parse(x.Value)+1).ToString()));
+           // var reegularka = new Regex(@"^\d*\D+\d+$");
+           // //Console.WriteLine(reegularka.IsMatch("asd123"));
+           // //Console.WriteLine(Regex.Replace("test123aaa4x56bbb789ccc", // строка
+           //   //                                   @"\d+", // шаблончик ркгулярочки
+           //    //                                  " ")); // символ для заммены
+           // //Console.WriteLine(Regex.Replace("12/34/5678",
+           // //                                 @"(?<день>\d{1,2})\/(?<месяц>\d{1,2})\/(?<год>\d{2,4})",
+           // //                                 "${день}-${месяц}-${год}"));
+           // //Console.WriteLine(Regex.Replace("123456",
+           // //                                @"\d",
+           // //                                x => (int.Parse(x.Value)+1).ToString()));
 
-            //Console.WriteLine(regexx);
-            //Console.WriteLine(BreakCamelCase(ghj)); 
+           // //Console.WriteLine(regexx);
+           // //Console.WriteLine(BreakCamelCase(ghj)); 
 
-            int[] xx = new int[] { 1, 2, 3, 4, 5, 6 };
-            var mom = xx.Aggregate((a, b) => a * b);
-            //foreach (var i in xx)
-            //Console.WriteLine(i); 
-
-
-            string s = "Бык тупогуб, тупогубенький бычок, у быка губа бела была тупа";
-            Regex regex = new Regex(@"туп(\w*)");
-            MatchCollection matches = regex.Matches(s);
-            //if (matches.Count > 0)
-            //{
-            //    foreach (Match match in matches)
-            //        Console.WriteLine(match.Value);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Совпадений не найдено");
-            //}
+           // int[] xx = new int[] { 1, 2, 3, 4, 5, 6 };
+           // var mom = xx.Aggregate((a, b) => a * b);
+           // //foreach (var i in xx)
+           // //Console.WriteLine(i); 
 
 
+           // string s = "Бык тупогуб, тупогубенький бычок, у быка губа бела была тупа";
+           // Regex regex = new Regex(@"туп(\w*)");
+           // MatchCollection matches = regex.Matches(s);
+           // //if (matches.Count > 0)
+           // //{
+           // //    foreach (Match match in matches)
+           // //        Console.WriteLine(match.Value);
+           // //}
+           // //else
+           // //{
+           // //    Console.WriteLine("Совпадений не найдено");
+           // //}
 
-            string x = "zxcqwe";
-            string[] zxc = x.Split();
-            int[] kak = new int[] { };
-            for(int i = 0; i < zxc.Length; i++)
-            {
-               // Console.WriteLine(kak[i]);
-            }
-            int[] kakak = new int[] { 1, 2, 3, 4, 5 };
-            //Console.WriteLine(Grow(kakak));
-            var segod = kakak.Select(x => x * 7);
-            var qwe = kakak.Select(x => x * 2);
 
-             //foreach(var i in segod)
-                //Console.WriteLine(i);
+
+           // string x = "zxcqwe";
+           // string[] zxc = x.Split();
+           // int[] kak = new int[] { };
+           // for(int i = 0; i < zxc.Length; i++)
+           // {
+           //    // Console.WriteLine(kak[i]);
+           // }
+           // int[] kakak = new int[] { 1, 2, 3, 4, 5 };
+           // //Console.WriteLine(Grow(kakak));
+           // var segod = kakak.Select(x => x * 7);
+           // var qwe = kakak.Select(x => x * 2);
+
+           //  //foreach(var i in segod)
+           //     //Console.WriteLine(i);
             
-            //foreach (int i in mom)
-            //    Console.WriteLine(i);
-            //IEnumerable<int> evens = from i in numbers
-            //                         where i % 2 == 0 && i < 100
-            //                         select i;
+           // //foreach (int i in mom)
+           // //    Console.WriteLine(i);
+           // //IEnumerable<int> evens = from i in numbers
+           // //                         where i % 2 == 0 && i < 100
+           // //                         select i;
 
-            //Console.BackgroundColor = ConsoleColor.Red;
-            //int[] arr = new int[] { 1, 2, 5, 4, 6 };
-            //Console.WriteLine(FirstNonConsecutive(arr));
-            //Console.ForegroundColor = ConsoleColor.Magenta;
-            //int[] numbers = { -3, -2, -1, 0, 1, 2, 3 };
-            //var result = numbers.Take(3);
-
-
-
-            //var resultit = numbers.Skip(3);
-            ////foreach (int i in resultit)
-            //    //Console.WriteLine(i);
-
-            //int[] qwe = { 1, 7, 3, 3, 3, 3, 3, 1 };
-            ////Console.WriteLine($"Количество повторений: {qwe.Length - qwe.Distinct().Count()}");
+           // //Console.BackgroundColor = ConsoleColor.Red;
+           // //int[] arr = new int[] { 1, 2, 5, 4, 6 };
+           // //Console.WriteLine(FirstNonConsecutive(arr));
+           // //Console.ForegroundColor = ConsoleColor.Magenta;
+           // //int[] numbers = { -3, -2, -1, 0, 1, 2, 3 };
+           // //var result = numbers.Take(3);
 
 
-            //int[] num = { 1, 2, 3, 4, 10, 34, 55, 66, 77, 88 };
-            //int size = (from i in num where i % 2 == 0 && i > 10 select i).Count();
-            ////Console.WriteLine(size);
-            //int sizeq = num.Count(i => i % 2 == 0 && i > 10);
-            ////Console.WriteLine(sizeq);
 
-            //string[] lll = new string[] { "n", "s", "n", "s", "n", "s", "n", "s", "n", "s" };
-            //int SN =  (from i in lll where i == "n" || i =="e" select i).Count();
-            //int WE = (from i in lll where i == "s" || i == "w" select i).Count();
-            //Console.WriteLine();   
-            //string text = "И поэтому все так произошло";
-            //string[] words = text.Split(new char[] { ' ' });
-            //foreach (string s in words)
-            //{
-            //    //Console.WriteLine(s);
-            //}
-            //string[] words1 = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            //foreach (string s in words1)
-            //{
-            //    //Console.WriteLine(s);
-            //}
-            //string textzxc = " hello world ";
-            //textzxc = textzxc.Trim();
-            //textzxc = textzxc.Trim(new char[] { 'd', 'h' });
-            //textzxc = textzxc.Trim(new char[] { 'e', 'l' });
-            ////Console.WriteLine(textzxc);
-            //string zxc = "Хороший день";
-            //string subString = "замечательный ";
+           // //var resultit = numbers.Skip(3);
+           // ////foreach (int i in resultit)
+           // //    //Console.WriteLine(i);
 
-            //zxc = zxc.Insert(8, subString);
-            //Console.WriteLine(zxc);
-
-            //string zxc = "12";
-            //int i = Convert.ToInt32(zxc);
-            //Console.WriteLine(i); ;
+           // //int[] qwe = { 1, 7, 3, 3, 3, 3, 3, 1 };
+           // ////Console.WriteLine($"Количество повторений: {qwe.Length - qwe.Distinct().Count()}");
 
 
-            //string ss = "true";
-            //bool b = Convert.ToBoolean(ss);
-            //Console.WriteLine(b);
+           // //int[] num = { 1, 2, 3, 4, 10, 34, 55, 66, 77, 88 };
+           // //int size = (from i in num where i % 2 == 0 && i > 10 select i).Count();
+           // ////Console.WriteLine(size);
+           // //int sizeq = num.Count(i => i % 2 == 0 && i > 10);
+           // ////Console.WriteLine(sizeq);
 
-            //if(int.TryParse("123",out int result))
-            //{
-            //    Console.WriteLine(result);
-            //}
-            //Console.WriteLine(bonus_time(10000, true));
-            //Console.ResetColor();
+           // //string[] lll = new string[] { "n", "s", "n", "s", "n", "s", "n", "s", "n", "s" };
+           // //int SN =  (from i in lll where i == "n" || i =="e" select i).Count();
+           // //int WE = (from i in lll where i == "s" || i == "w" select i).Count();
+           // //Console.WriteLine();   
+           // //string text = "И поэтому все так произошло";
+           // //string[] words = text.Split(new char[] { ' ' });
+           // //foreach (string s in words)
+           // //{
+           // //    //Console.WriteLine(s);
+           // //}
+           // //string[] words1 = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+           // //foreach (string s in words1)
+           // //{
+           // //    //Console.WriteLine(s);
+           // //}
+           // //string textzxc = " hello world ";
+           // //textzxc = textzxc.Trim();
+           // //textzxc = textzxc.Trim(new char[] { 'd', 'h' });
+           // //textzxc = textzxc.Trim(new char[] { 'e', 'l' });
+           // ////Console.WriteLine(textzxc);
+           // //string zxc = "Хороший день";
+           // //string subString = "замечательный ";
+
+           // //zxc = zxc.Insert(8, subString);
+           // //Console.WriteLine(zxc);
+
+           // //string zxc = "12";
+           // //int i = Convert.ToInt32(zxc);
+           // //Console.WriteLine(i); ;
+
+
+           // //string ss = "true";
+           // //bool b = Convert.ToBoolean(ss);
+           // //Console.WriteLine(b);
+
+           // //if(int.TryParse("123",out int result))
+           // //{
+           // //    Console.WriteLine(result);
+           // //}
+           // //Console.WriteLine(bonus_time(10000, true));
+           // //Console.ResetColor();
         }
     }
 }
